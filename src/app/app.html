@@ -1,60 +1,86 @@
 <div class="portfolio">
 
   <nav class="navbar">
-    <div class="logo">BOOGEY</div>
 
-```
-<div class="nav-links">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Skills</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
-</div>
-```
+    <div class="logo">
+      BOOGEY
+    </div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
 
   </nav>
 
+
   <section class="hero">
 
-```
-<div class="hero-text">
+    <div class="hero-text">
 
-  <p class="greeting">Hello, I'm</p>
+      <p class="greeting">
+        Hello, I'm
+      </p>
 
-  <h1>{{ name }}</h1>
+      <h1>
+        {{ name }}
+      </h1>
 
-  <h2>{{ role }}</h2>
+      <h2>
+        {{ role }}
+      </h2>
 
-  <p>
-    {{ introduction }}
-  </p>
+      <p>
+        {{ introduction }}
+      </p>
 
-  <p>
-    My skills: {{ skills }}
-  </p>
+      <div class="buttons">
+        <button>View Projects</button>
+        <button>Contact Me</button>
+      </div>
 
-  <div class="buttons">
-    <button>View Projects</button>
-    <button>Contact Me</button>
-  </div>
-
-</div>
-```
+    </div>
 
   </section>
 
+
   <section class="about">
 
-```
-<h2>About Me</h2>
+    <h2>About Me</h2>
 
-<p>{{ introduction }}</p>
+    <p>
+      {{ introduction }}
+    </p>
 
-<p>Location: {{ location }}</p>
+    <p>
+      Location: {{ location }}
+    </p>
 
-<p>Email: {{ email }}</p>
-```
+    <p>
+      Email: {{ email }}
+    </p>
+
+  </section>
+
+
+  <section class="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skill-list">
+
+      @for (skill of skills; track skill) {
+
+        <div class="skill-card">
+          {{ skill }}
+        </div>
+
+      }
+
+    </div>
 
   </section>
 

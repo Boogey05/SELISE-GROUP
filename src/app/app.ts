@@ -16,7 +16,14 @@ export class App {
 
   introduction = 'I enjoy building software, exploring AI and machine learning, and learning new technologies.';
 
-  skills = 'ML, HTML, Angular, Python, Docker, Git';
+  skills = [
+    'HTML',
+    'ML',
+    'Angular',
+    'Python',
+    'Docker',
+    'Git'
+  ];
 
   email = 'kinleyphuntsho2005@email.com';
 }

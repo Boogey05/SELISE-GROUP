@@ -2,18 +2,23 @@
   box-sizing: border-box;
 }
 
-.portfolio {
+body {
+  margin: 0;
   font-family: Arial, sans-serif;
   color: #222;
 }
 
-/* Navbar */
+.portfolio {
+  width: 100%;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 8%;
+
   border-bottom: 1px solid #ddd;
 }
 
@@ -32,12 +37,12 @@
   color: #222;
 }
 
-/* Hero */
-
 .hero {
   min-height: 600px;
+
   display: flex;
   align-items: center;
+
   padding: 80px 8%;
 }
 
@@ -74,8 +79,6 @@ button {
   cursor: pointer;
 }
 
-/* About */
-
 .about {
   padding: 80px 8%;
   background: #f5f5f5;
@@ -83,4 +86,42 @@ button {
 
 .about h2 {
   font-size: 40px;
+}
+
+.skills {
+  padding: 80px 8%;
+}
+
+.skills h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  width: 100%;
+}
+
+.skill-card {
+  display: block;
+
+  width: auto;
+  min-width: 100px;
+
+  padding: 15px 25px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background: #f5f5f5;
+
+  font-size: 16px;
+
+  white-space: nowrap;
 }
