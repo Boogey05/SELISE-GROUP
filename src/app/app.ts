@@ -9,4 +9,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   name = 'Boogey';
+
+  role = 'IT Student & Developer';
+  
+  location = 'Phuntsholing, Bhutan';
+
+  introduction = 'I enjoy building software, exploring AI and machine learning, and learning new technologies.';
+
+  skills = 'ML, HTML, Angular, Python, Docker, Git';
+
+  email = 'kinleyphuntsho2005@email.com';
 }

@@ -22,13 +22,16 @@
 
   <p class="greeting">Hello, I'm</p>
 
-  <h1>Boogey</h1>
+  <h1>{{ name }}</h1>
 
-  <h2>IT Student & Developer</h2>
+  <h2>{{ role }}</h2>
 
   <p>
-    I enjoy building software, exploring AI and machine learning,
-    and learning new technologies.
+    {{ introduction }}
+  </p>
+
+  <p>
+    My skills: {{ skills }}
   </p>
 
   <div class="buttons">
@@ -46,11 +49,11 @@
 ```
 <h2>About Me</h2>
 
-<p>
-  I am an Information Technology student interested in software
-  development, artificial intelligence, databases and modern
-  web technologies.
-</p>
+<p>{{ introduction }}</p>
+
+<p>Location: {{ location }}</p>
+
+<p>Email: {{ email }}</p>
 ```
 
   </section>
